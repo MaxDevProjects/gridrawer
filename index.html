@@ -1,0 +1,50 @@
+<!DOCTYPE html style="height:100%;">
+<html lang="en"  style="background-color: #1d1d1d;">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <div class="container">
+        <div class="grid grid-template-2">
+            <canvas id="canvas"></canvas>
+            <div class="container form">
+                <div class="margin-v-1">
+                    <label for="tileSize">Tile size(8 to 128)<span id="tileSizeValue"></span></label>
+                    <input class="slider" type="range" min="8" max="128" id="tileSize" name="tileSize" value="32">
+                </div>
+                <div class="margin-v-1">
+                    <label for="nbLine">Number of lines<span id="nbLineValue"></span></label>
+                    <input class="slider" type="range" min="0" id="nbLine" name="nbLine" value="0">
+                </div>
+                <div class="margin-v-1">
+                    <label for="nbCol">Number of columns<span id="nbColValue"></span></label>
+                    <input class="slider" type="range" min="0" id="nbCol" name="nbCol" value="0">
+                </div>
+                <div class="margin-v-1">
+                    <a id="randomly">Random grid</a>
+                </div>
+                <div class="margin-v-1">
+                    <a id="genCode">Code</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div id="code-area">
+            <h3>The grid : </h3>
+            <p id="grid-code"></p>             
+        </div>
+
+    </div>
+
+    <!-- const tileSize = 32
+    let grid = []
+    let sw = canvas.width
+    let sh = canvas.height
+    const numberOfTile = Math.floor(sw / tileSize * 2) -->
+</body>
+<script type="module" src="./script/main.js"></script>
+</html>
